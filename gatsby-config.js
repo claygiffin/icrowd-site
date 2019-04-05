@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-prismic`,
       options: {
         repositoryName: `icrowd`,
-        accessToken: `${process.env.API_KEY}`,
+        accessToken: `${process.env.GATSBY_API_KEY}`,
         linkResolver: ({ node, key, value }) => doc => `/${doc.uid}`,
       },
     },
