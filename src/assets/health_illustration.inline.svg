@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1296 312" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g 
+        id="health_illustration" 
+        fill="none" 
+        stroke="inherit" 
+        stroke-width="4px"
+    >
+        <g id="main-line" stroke-linecap="square" stroke-linejoin="round">
+            <mask id="healthMask" maskUnits="userSpaceOnUse">
+                <rect id="Rectangle" fill="white" x="-2" y="0" width="1300" height="260"></rect>
+                <rect id="Rectangle" fill="black" x="438" y="0" width="416" height="312"></rect>
+            </mask>
+            <path d="M0,156 L1296,156" stroke-linecap="square" stroke-linejoin="round"  mask="url(#healthMask)"></path>
+        </g>
+        <g id="illustration" transform="translate(437.244894, 6.568067)">
+            <path d="M63.7551064,99.3407532 L179.755106,136.431933 L179.755106,120.027672 C179.755106,120.027672 140.043505,88.7450144 121.755106,55.4319332 C91.0379608,71.9653809 63.7551064,82.9389297 63.7551064,82.9389297 C63.7551064,85.8075564 63.7551064,93.6034999 63.7551064,99.3407532 Z" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M299.755106,62.4319332 C299.755106,62.4319332 258.949988,34.1118528 239.755106,1.43193324 C239.230226,0.538307691 239.280949,-0.402554432 238.04387,0.180201734 C211.9797,12.4583643 173.216779,30.8756081 121.755106,55.4319332" id="Stroke-3" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M121.755106,118.431933 L121.755106,140.931933" id="Path" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M179.755106,196.931933 L179.755106,136.638951" id="Path" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M63.7551064,99.4319332 L63.7551064,122.931933" id="Path" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <polyline id="Stroke-17" stroke-linecap="round" stroke-linejoin="bevel" points="295.755106 156.431933 179.755106 119.431933 64.4766672 83.4319332"></polyline>
+            <path d="M295.755106,157.027672 C295.755106,157.027672 256.043505,125.745014 237.755106,92.4319332 C206.409527,106.735084 179.755106,119.938929 179.755106,119.938929 L179.755106,136.340753 L295.755106,173.431933 L295.755106,157.027672 Z" id="Path" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <path d="M415.755106,99.4319332 C415.755106,99.4319332 375.358822,69.2141053 356.755106,35.4319332 L237.755106,92.4319332" id="Stroke-23" stroke-linecap="square" stroke-linejoin="round"></path>
+            <polyline id="Stroke-25" stroke-linecap="round" stroke-linejoin="round" points="236.755106 156.431933 236.625399 229.431933 196.14593 215.484315"></polyline>
+            <path d="M236.755106,170.758849 C236.755106,185.758849 233.405095,217.158242 260.755106,234.431933 C270.255106,240.431933 276.278406,242.17391 281.755106,243.931933 L295.755106,247.431933 L295.755106,173.638951" id="Path" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <polygon id="Path" stroke-linecap="square" stroke-linejoin="bevel" points="295.755106 248.431933 416.755106 191.810603 416.755106 99.4319332 295.755106 156.053263"></polygon>
+            <path d="M416.755106,117.431933 L295.755106,174.431933" id="Stroke-33" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M157.255106,243.931933 L193.755106,229.431933" id="Stroke-39" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <path d="M157.255106,235.438003 L193.755106,220.431933" id="Stroke-41" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <path d="M46.2256643,220.431933 L39.2551064,225.931933" id="Path" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M133.641909,156.634832 C135.945231,157.346178 139.400213,158.413197 144.006856,159.835889 C148.734356,161.294087 153.206856,165.552914 155.926856,171.181264 C160.184356,179.996961 166.034356,192.098531 166.034356,192.098531 C166.034356,192.098531 179.199356,196.77856 187.984356,199.894474 C192.279356,201.421641 195.751856,206.808601 195.831856,212.062549 C195.984356,222.346297 196.154356,236.659796 196.154356,236.659796 L155.926856,252.820356" id="Stroke-59" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <polyline id="Stroke-63" stroke-linecap="square" stroke-linejoin="bevel" points="88.6274578 159.920017 -2.84217094e-14 132.343386 41.1464323 115.858754 128.953334 143.400754 88.9265159 159.390649"></polyline>
+            <path d="M89.6265081,171.394044 L103.217106,175.50899 C107.944606,176.963014 112.417106,181.20965 115.137106,186.819433 C119.394606,195.609896 125.244606,207.679281 125.244606,207.679281 C125.244606,207.679281 138.409606,212.343458 147.194606,215.452909 C151.489606,216.973249 154.962106,222.344789 155.042106,227.583698 C155.194606,237.840465 155.419606,252.820356 155.419606,252.820356 C146.016521,249.92506 138.964207,247.753589 134.262664,246.305941 M108.808865,238.468485 C104.866349,237.254548 98.3049298,235.234227 89.1246064,232.407522" id="Shape" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <polyline id="Stroke-73" stroke-linecap="round" stroke-linejoin="round" points="16.2551064 210.431933 2.27062944 205.750785 0.824820432 133.053984 88.1806991 160.356047 89.6265081 233.052848 42.4525559 217.931933"></polyline>
+            <path d="M129.385712,150.353941 L128.86848,143.431933" id="Stroke-77" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M153.755106,168.431933 L114.755106,184.431933" id="Stroke-79" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <path d="M126.755106,207.431933 L165.755106,191.431933" id="Stroke-81" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="105.830788 171.394044 98.0474246 168.856711 97.5196973 161.846044"></polyline>
+            <polygon id="Stroke-89" stroke-linecap="square" stroke-linejoin="round" points="125.853334 149.431933 130.749556 151.957545 134.755106 159.629122 106.656878 171.431933 102.517727 163.695532 97.7551064 161.234744"></polygon>
+            <path d="M105.830788,163.931933 L129.127096,153.931933" id="Stroke-93" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M41.7514105,217.096258 C41.9142506,225.127344 36.6758102,229.996296 30.0519764,227.974485 C23.4256374,225.950231 17.9216424,217.799497 17.7588023,209.768412 C17.5959622,201.737326 22.8344026,196.865932 29.4582364,198.890186 C36.0845754,200.914439 41.5885704,209.065173 41.7514105,217.096258 Z" id="Stroke-97" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <path d="M68.7496993,185.805758 C68.9875506,197.585798 61.3487667,204.727447 51.6869944,201.760349 C42.0252221,198.790798 33.9983649,186.836511 33.7605135,175.056471 C33.5226622,163.278886 41.1614461,156.134782 50.8232184,159.104334 C60.4849907,162.071432 68.5118479,174.028172 68.7496993,185.805758 Z" id="Stroke-101" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <path d="M133.75141,246.09724 C133.91425,254.128681 128.67581,258.997849 122.051976,256.973506 C115.425637,254.951604 109.921642,246.798068 109.758802,238.766626 C109.595962,230.735185 114.834402,225.866017 121.458236,227.89036 C128.084575,229.914703 133.58857,238.065798 133.75141,246.09724 Z" id="Stroke-105" stroke-linecap="square" stroke-linejoin="bevel"></path>
+            <polygon id="Stroke-109" stroke-linecap="square" points="62.7551064 188.559636 62.7551064 179.040514 55.1231305 176.689628 54.9595882 168.090205 46.5247681 165.431933 46.5247681 174.090374 39.7551064 171.722275 39.7551064 181.243855 46.8815878 183.602119 47.017873 191.773661 55.4526931 194.431933 55.3139299 186.201372"></polygon>
+            <path d="M130.14764,255.431933 L139.255106,247.431933" id="Path-2" stroke-linejoin="round" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

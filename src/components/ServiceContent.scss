@@ -1,0 +1,112 @@
+@import './theme.scss';
+
+.service-content {
+  @extend %page-margins;  
+  min-height: 125vh;
+  padding-top: 12.5vw;
+  padding-bottom: 22.5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    margin-left: nth($col-pd, 1);
+  }
+  .details {
+    h5 {
+      margin: 2em 0 .5em;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1em;
+    }
+    .lede {
+      @extend %font-21;
+      width: 100%;
+    }
+  }
+  &#advisory-services {
+    flex-direction: row;
+    h2 {
+      @extend %col-6;
+      transition: 2s opacity .5s ease, 1.5s transform cubic-bezier(0,0,.25,1);
+      &:not(.animated){
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    .details {
+      @extend %col-5;
+      margin-left: 1 * $gut;
+      h5 {
+        color: $yellow;
+      }
+      .button {
+        background-color: $yellowDark;
+      }
+      transition: 2s opacity .5s ease, 1.5s transform cubic-bezier(0,0,.25,1);
+      &:not(.animated){
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+      }
+    }
+  }
+  &#health-and-safety-services {
+    h2 {
+      @extend %col-10;
+      transition: 2s opacity .5s ease, 1.5s transform cubic-bezier(0,0,.25,1);
+      &:not(.animated){
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    .details {
+      @extend %col-10;
+      margin-left: nth($col-pd, 1);
+      display: flex;
+      align-items: flex-start;
+      .text {
+        @extend %col-5;
+        h5 {
+          color: $tealLight;
+        }
+      }
+      .button {
+        margin-top: 5em;
+        margin-left: 1 * $gut;
+        background-color: $tealDark;
+      }
+      transition: 2s opacity 1s ease, 1.5s transform .5s cubic-bezier(0,0,.25,1);
+      &:not(.animated){
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+  }
+  &#event-support-services {
+    h2 {
+      @extend %col-10;
+      transition: 2s opacity .5s ease, 1.5s transform cubic-bezier(0,0,.25,1);
+      &:not(.animated){
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+      }
+    }
+    .details {
+      @extend %col-8;
+      margin-left: nth($col-pd, 1);
+      h5 {
+        color: $orangeLight;
+      }
+      .button {
+        background-color: $orange;
+      }
+      transition: 2s opacity 1s ease, 1.5s transform .5s cubic-bezier(0,0,.25,1);
+      &:not(.animated){
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+      }
+    }
+  }
+}

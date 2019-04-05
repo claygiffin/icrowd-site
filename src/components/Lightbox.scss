@@ -1,0 +1,120 @@
+@import './theme.scss';
+
+.lightbox {
+  @extend %absolute-fill;
+  position: fixed;
+  text-align: center;
+  z-index: 99;
+  transform: translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  background-color: rgba(white, 0);
+  transition: .1s background-color ease;
+  .lightbox-wrapper {
+    @extend %absolute-fill;
+    position: fixed;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transform: translate3D(0,0,0);
+    .wrapper-inner {
+      position: relative;
+    }
+    .lightbox-container {
+      -webkit-backface-visibility: hidden;
+      -webkit-perspective: 1000;
+      transform: translate3D(0,0,0);
+      opacity: 0;
+      transition: .3s opacity ease;
+      background: white;
+      margin: 2rem 0 3rem;
+      position: relative;
+      z-index: 10;
+      box-shadow: 0 1vw 5vw rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.05);
+      display: inline-flex;
+      flex-direction: column;
+      .lightbox-content {
+        width: 62.5vw;
+        min-width: $tb * .9px;
+        @media screen and (max-width: $tb * 1px) {
+          width: 90vw;
+          min-width: auto;
+        }
+      }
+    }
+    .lightbox-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      min-height: 100vh;
+      z-index: 1;
+    }  
+  }
+  nav {
+    justify-content: space-between;
+    align-items:center;
+    display: flex;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    .site-logo {
+      height: 3rem;
+      width: auto;
+      min-height: 24px;
+      padding: 0;
+    }
+    .close-button {
+      cursor: pointer;
+      justify-content:center;
+      align-items:center;
+      display: flex;
+      transition:.1s color ease;
+    }
+  }
+  @media screen and (max-width: $tb * 1px) {
+    .lightbox-wrapper {
+      .wrapper-inner {
+        .lightbox-container {
+          nav {
+            padding: 1.25rem 2rem;
+            box-sizing: border-box;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.lightbox-open {
+  overflow: hidden;
+  #content {
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .lightbox {
+    background-color: rgba(#f2f2f2, .95);
+    .lightbox-wrapper .lightbox-container {
+      opacity: 1;
+    }
+  }
+  &.multi-lightbox-open{
+    .lightbox:not(.active) {
+      z-index: 99;
+      .lightbox-wrapper .lightbox-container {
+        opacity: 0;
+      }
+    }
+    .lightbox.active {
+      background-color: rgba(#f2f2f2, 0);
+      z-index: 999;
+    }
+  }
+  video {
+    visibility: hidden;
+  }
+}

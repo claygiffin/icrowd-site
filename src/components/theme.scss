@@ -1,0 +1,123 @@
+@import './_helpers.scss';
+@import url("https://use.typekit.net/bfk7pnx.css");
+
+$blueDark: hsl(204, 100%, 8%);
+$blueMidDark: hsl(210, 86%, 14%);
+$blueMidLight: hsl(211, 86%, 22%);
+$blueLight: hsl(219, 56%, 31%);
+$offWhite: hsl(210, 9%, 82%);
+$yellow: hsl(40, 97%, 59%);
+$yellowDark: #E99619;
+$teal: hsl(186, 65%, 45%);
+$tealLight: hsl(186, 63%, 65%);
+$tealDark: #0093A5;
+$orange: hsl(22, 74%, 44%);
+$orangeLight: #FF843A;
+
+$dl: 1800;
+$dt: 1440;
+$ds: 1080;
+$tb: 768;
+$mb: 480;
+
+$gut: 2.5vw;
+
+@mixin dark-gradient {
+  background-image: url(../assets/dark-gradient.svg);
+  background-size: contain;
+  background-position-y: 100%;
+  background-repeat-y: no-repeat;
+  pointer-events: none;
+}
+
+%font-144 {
+  font-size: calc(3rem + 7.5vw);
+  @media screen and (max-width: $dt * 1px) {
+    font-size: calc(6rem + 5vw);
+  }
+}
+
+%font-96 {
+  font-size: calc(2rem + 5vw);
+  @media screen and (max-width: $dt * 1px) {
+    font-size: calc(4rem + 3.33vw);
+  }
+}
+
+%font-72 {
+  font-size: calc(1.5rem + 3.75vw);
+  @media screen and (max-width: $dt * 1px) {
+    font-size: calc(3rem + 2.5vw);
+  }
+}
+
+%font-48 {
+  font-size: calc(1rem + 2.5vw);
+  @media screen and (max-width: $dt * 1px) {
+    font-size: calc(3rem + .8333vw);
+  }
+}
+
+%font-27 {
+  font-size: 1.875vw;
+  @media screen and (max-width: $dt * 1px) {
+    font-size: 2.25rem;
+  }
+}
+
+%font-21 {
+  font-size: 1.5vw;
+  @media screen and (max-width: $dt * 1px) {
+    font-size: 1.75rem;
+  }
+}
+
+%font-16 {
+  font-size: 1.125vw;
+  @media screen and (max-width: $dt * 1px) {
+    font-size: 1.333rem;
+  }
+}
+
+%font-15 {
+  font-size: 1vw;
+  @media screen and (max-width: $dt * 1px) {
+    font-size: 1.25rem;
+  }
+}
+
+// %col-12 {
+//   width: 90vw;
+// }
+
+$col: ();
+
+$col-pd: ();
+
+@for $i from 1 through 12 {
+  %col-#{$i} {
+    width: calc((62.5vw / 12 * #{$i}) + (2.5vw * (#{$i} - 1)));
+  }
+}
+
+@for $i from 1 through 12 {
+  $col: append($col, calc((62.5vw / 12 * #{$i}) + (2.5vw * (#{$i} - 1))));
+}
+
+@for $i from 1 through 12 {
+  $col-pd: append($col-pd, calc( (62.5vw / 12 * #{$i}) + (2.5vw * #{$i}) ) );
+}
+
+// %col-10 {
+//   width: calc((100vw - 10vw - (2.5vw * 11)) / 12 * 10 + (2.5vw * 9));
+// }
+
+%page-margins {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+%transition-standard {
+  transition-timing-function: ease;
+  transition-duration: .3s;
+}

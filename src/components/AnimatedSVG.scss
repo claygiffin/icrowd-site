@@ -1,0 +1,72 @@
+@import './theme.scss';
+
+.animated-svg {
+  position: absolute;
+  height: 0;
+  width: 90vw;
+  left: 5vw;
+  right: 5vw;
+  top: 0;
+  z-index: 2;
+  svg {
+    width: 100%;
+    transform: translateY(-50%);
+    path,
+    polyline,
+    polygon {
+      vector-effect: non-scaling-stroke;
+      transition: stroke 1s ease, stroke-dashoffset 1.5s linear;
+    }
+    > g {
+      stroke-width: 4px;
+    }
+    #illustration {
+      path,
+      polyline,
+      polygon {
+        transition: stroke 1s ease, stroke-dashoffset 4s ease .5s;
+      }
+    }
+    #main-line {
+      path {
+        shape-rendering: crispEdges;
+      }
+    }
+  }
+  &.animated {
+    svg {
+      path,
+      polyline,
+      polygon {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  @media screen and (max-width: $tb * 1px ) {
+    svg {
+      >g {
+        stroke-width: 3px;
+      }
+    }
+  }
+  @media screen and (max-width: $mb * 1px ) {
+    svg {
+      >g {
+        stroke-width: 2px;
+      }
+    }
+  }
+
+  @for $i from 8 through 72 {
+    @media screen and (min-width: $i * 36px) {
+      svg {
+        path,
+        polyline,
+        polygon {
+          stroke-dasharray: .95 * $i * 36;
+          stroke-dashoffset: .95 * $i * 36;
+        }
+      }
+    }
+  }
+}

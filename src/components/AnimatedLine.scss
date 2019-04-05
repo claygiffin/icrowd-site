@@ -1,0 +1,30 @@
+@import './theme.scss';
+
+.animated-line {
+  width: 4px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 0px;
+  transition-property: height;
+  transition-timing-function: ease;
+  &.animated {
+    height: 100%;
+  }
+  &.right {
+    right: 5vw;
+  }
+  &.left {
+    left: 5vw;
+  }
+  .fill {
+    @extend %absolute-fill;
+    transition: background-color 1s ease;
+  }
+  @media screen and (max-width: $tb * 1px ) {
+    width: 3px;
+  }
+  @media screen and (max-width: $mb * 1px ) {
+    width: 2px;
+  }
+}

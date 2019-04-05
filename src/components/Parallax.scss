@@ -1,0 +1,17 @@
+@import './theme.scss';
+
+.parallax-bg {
+  @extend %absolute-fill;
+  z-index: -100;
+  clip-path: inset(0 0 0 0);
+  overflow: hidden;
+  animation: fadeIn 1.5s 0s ease;
+  > * {
+    @extend %absolute-fill;
+  }
+  img {
+    @extend %absolute-fill;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
