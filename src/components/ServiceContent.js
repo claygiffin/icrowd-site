@@ -27,7 +27,7 @@ class ServiceContent extends React.Component {
 
     return (
       <section id={id} className={`service-content`}>
-        <Waypoint onPositionChange={({currentPosition}) => {this._handlePositionChange(currentPosition)}} scrollableAncestor={window} />
+        <Waypoint onPositionChange={({currentPosition}) => {this._handlePositionChange(currentPosition)}} scrollableAncestor={"window"} />
         <h2 className={`large ${this.state.animated ? 'animated' : ''}`}>{content.data.headline.text}</h2>
         <div className={`details ${this.state.animated ? 'animated' : ''}`}>
           <div className="text">

@@ -6,7 +6,7 @@
 html {
   font-size: 12px;
   @media screen and (min-width: $dt * 1px) {
-    font-size: calc(12 / $dt * 100vw)
+    font-size: calc(12 / #{$dt} * 100vw)
   }
 }
 

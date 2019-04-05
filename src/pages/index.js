@@ -151,7 +151,7 @@ export default class HomePage extends React.Component {
     return (
       <Layout>
         <div style={{position: 'relative', display: 'flex'}}>
-          <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('hero', currentPosition, previousPosition)}} scrollableAncestor={window} />
+          <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('hero', currentPosition, previousPosition)}} scrollableAncestor={"window"} />
           <AnimatedLine runAnimation={this.state.animations.hero.animated} lineColor={this.state.lineColor} delay={0} right/>
           <Hero
             video
@@ -169,7 +169,7 @@ export default class HomePage extends React.Component {
         </div>
         <section id="content">
           <div style={{position: 'relative'}}>
-            <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('advisory', currentPosition, previousPosition)}} scrollableAncestor={window} />          
+            <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('advisory', currentPosition, previousPosition)}} scrollableAncestor={"window"} />          
             <AnimatedSVG runAnimation={this.state.animations.advisory.animated} lineColor={this.state.lineColor} >
               <AdvisorySVG />
             </AnimatedSVG>
@@ -177,7 +177,7 @@ export default class HomePage extends React.Component {
             <ServiceContent content={advisory} id="advisory-services"/>  
           </div>
           <div style={{position: 'relative'}}>
-            <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('healthAndSafety', currentPosition, previousPosition)}} scrollableAncestor={window} />
+            <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('healthAndSafety', currentPosition, previousPosition)}} scrollableAncestor={"window"} />
             <AnimatedSVG runAnimation={this.state.animations.healthAndSafety.animated} lineColor={this.state.lineColor} >
               <HealthSVG />
             </AnimatedSVG>
@@ -185,7 +185,7 @@ export default class HomePage extends React.Component {
             <ServiceContent content={healthAndSafety} id="health-and-safety-services"/>
           </div>
           <div style={{position: 'relative'}}>
-            <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('eventSupport', currentPosition, previousPosition)}} scrollableAncestor={window} />
+            <Waypoint onPositionChange={({currentPosition, previousPosition}) => {this._handlePositionChange('eventSupport', currentPosition, previousPosition)}} scrollableAncestor={"window"} />
             <AnimatedSVG runAnimation={this.state.animations.eventSupport.animated} lineColor={this.state.lineColor} >
               <EventSVG />
             </AnimatedSVG>
